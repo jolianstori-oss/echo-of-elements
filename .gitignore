@@ -1,0 +1,70 @@
+# Unreal Engine generated folders
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vscode/
+.idea/
+
+# Visual Studio / Rider / IDE files
+.vs/
+*.sln
+*.suo
+*.user
+*.userprefs
+*.VC.db
+*.VC.opendb
+*.opensdf
+*.sdf
+*.pdb
+*.opendb
+*.db
+
+# Unreal project files and generated metadata
+*.tmp
+*.temp
+*.log
+*.bak
+*.orig
+*.swp
+*.swo
+*.patch
+*.code-workspace
+
+# Generated build and packaging output
+*.generated.h
+*.gen.cpp
+*.pak
+*.utoc
+*.ucas
+*.ushaderbytecode
+*.sig
+
+# Unreal autosaves and local editor state
+Saved/
+Autosaves/
+Collections/
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Large local exports and profiling captures
+*.csv
+*.json
+*.uprojectdirs
+
+# Keep source-controlled project descriptors and configuration
+!Config/*.ini
+!Config/*.xml
+!Source/
+!Content/
