@@ -1,0 +1,22 @@
+{
+  "FileVersion": 3,
+  "EngineAssociation": "5.8",
+  "Category": "Games",
+  "Description": "Echo of Elements (صدى الأثير) — elemental action game foundation.",
+  "Modules": [
+    {
+      "Name": "EchoOfElements",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
+    }
+  ],
+  "Plugins": [
+    { "Name": "EnhancedInput", "Enabled": true },
+    { "Name": "GameplayAbilities", "Enabled": true },
+    { "Name": "GameplayTags", "Enabled": true },
+    { "Name": "Niagara", "Enabled": true },
+    { "Name": "Chaos", "Enabled": true }
+  ],
+  "TargetPlatforms": [ "Windows", "Linux" ],
+  "AdditionalRootDirectories": [ "Content" ]
+}
