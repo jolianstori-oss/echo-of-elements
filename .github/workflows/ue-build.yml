@@ -1,0 +1,95 @@
+name: Unreal Engine 5.8 Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      configuration:
+        description: Build configuration
+        required: true
+        default: Development
+        type: choice
+        options:
+          - DebugGame
+          - Development
+          - Shipping
+
+env:
+  UE_VERSION: '5.8'
+  UE_ROOT: ${{ vars.UNREAL_ENGINE_ROOT || 'D:\\UnrealEngine' }}
+  PROJECT_GLOB: '**/*.uproject'
+
+jobs:
+  build:
+    name: Generate project files and build Editor/Game
+    runs-on: [self-hosted, windows, unreal-engine]
+    timeout-minutes: 90
+    defaults:
+      run:
+        shell: powershell
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Verify Unreal Engine installation
+        run: |
+          $engineRoot = [Environment]::ExpandEnvironmentVariables("${{ env.UE_ROOT }}")
+          $buildBat = Join-Path $engineRoot 'Engine\Build\BatchFiles\Build.bat'
+          $projectFilesBat = Join-Path $engineRoot 'Engine\Build\BatchFiles\GenerateProjectFiles.bat'
+
+          if (-not (Test-Path $buildBat)) {
+            throw "Unreal Engine ${{ env.UE_VERSION }} was not found at '$engineRoot'. Set the repository variable UNREAL_ENGINE_ROOT or provision the self-hosted runner with the 'unreal-engine' label."
+          }
+          if (-not (Test-Path $projectFilesBat)) {
+            throw "GenerateProjectFiles.bat was not found under '$engineRoot'."
+          }
+
+          "UE_ROOT=$engineRoot" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+          "UE_BUILD_BAT=$buildBat" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+          "UE_PROJECT_FILES_BAT=$projectFilesBat" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+
+      - name: Locate Unreal project
+        run: |
+          $projects = @(Get-ChildItem -Path $env:GITHUB_WORKSPACE -Filter '*.uproject' -File -Recurse)
+          if ($projects.Count -eq 0) {
+            throw 'No .uproject file was found. Add the Unreal project before enabling this build.'
+          }
+          if ($projects.Count -gt 1) {
+            throw "Expected exactly one .uproject file, found $($projects.Count): $($projects.FullName -join ', ')"
+          }
+
+          "PROJECT_FILE=$($projects[0].FullName)" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+          "PROJECT_DIR=$($projects[0].DirectoryName)" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+          "PROJECT_NAME=$($projects[0].BaseName)" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+
+      - name: Generate Visual Studio project files
+        run: |
+          & $env:UE_PROJECT_FILES_BAT $env:PROJECT_FILE -Game -Engine
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+      - name: Build Unreal Editor target
+        run: |
+          $configuration = '${{ inputs.configuration || 'Development' }}'
+          & $env:UE_BUILD_BAT "$env:PROJECT_NAME`Editor" Win64 $configuration "$env:PROJECT_FILE" -WaitMutex -NoHotReloadFromIDE
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+      - name: Build Unreal Game target
+        run: |
+          $configuration = '${{ inputs.configuration || 'Development' }}'
+          & $env:UE_BUILD_BAT "$env:PROJECT_NAME" Win64 $configuration "$env:PROJECT_FILE" -WaitMutex -NoHotReloadFromIDE
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+      - name: Upload build logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: unreal-build-logs
+          path: |
+            ${{ env.PROJECT_DIR }}/Saved/Logs/**/*.log
+            ${{ env.UE_ROOT }}/Engine/Programs/UnrealBuildTool/**/*.log
+          if-no-files-found: ignore
+          retention-days: 14
