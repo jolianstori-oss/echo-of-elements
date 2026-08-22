@@ -1,0 +1,258 @@
+{
+  "package": "Fire Castle Final Materials",
+  "resolution": 1024,
+  "texture_sets": [
+    {
+      "id": "Obsidian",
+      "label": "Obsidian Fracture",
+      "master_material": "M_FC_Master_Surface",
+      "textures": {
+        "base_color": "T_FC_Obsidian_BC.png",
+        "normal": "T_FC_Obsidian_N.png",
+        "orm": "T_FC_Obsidian_ORM.png",
+        "height": "T_FC_Obsidian_H.png"
+      },
+      "ue_settings": {
+        "base_color": "sRGB true",
+        "normal": "sRGB false; Compression: Normalmap",
+        "orm": "sRGB false; Compression: Masks (R=AO,G=Roughness,B=Metallic)",
+        "height": "sRGB false; Compression: Grayscale"
+      },
+      "parameters": {
+        "metallic": 0.1,
+        "roughness_art_direction": 0.3,
+        "emissive": false
+      }
+    },
+    {
+      "id": "ScorchedBrick",
+      "label": "Scorched Furnace Brick",
+      "master_material": "M_FC_Master_Surface",
+      "textures": {
+        "base_color": "T_FC_ScorchedBrick_BC.png",
+        "normal": "T_FC_ScorchedBrick_N.png",
+        "orm": "T_FC_ScorchedBrick_ORM.png",
+        "height": "T_FC_ScorchedBrick_H.png"
+      },
+      "ue_settings": {
+        "base_color": "sRGB true",
+        "normal": "sRGB false; Compression: Normalmap",
+        "orm": "sRGB false; Compression: Masks (R=AO,G=Roughness,B=Metallic)",
+        "height": "sRGB false; Compression: Grayscale"
+      },
+      "parameters": {
+        "metallic": 0.02,
+        "roughness_art_direction": 0.82,
+        "emissive": false
+      }
+    },
+    {
+      "id": "BurntIron",
+      "label": "Oxidised Burnt Iron",
+      "master_material": "M_FC_Master_Surface",
+      "textures": {
+        "base_color": "T_FC_BurntIron_BC.png",
+        "normal": "T_FC_BurntIron_N.png",
+        "orm": "T_FC_BurntIron_ORM.png",
+        "height": "T_FC_BurntIron_H.png"
+      },
+      "ue_settings": {
+        "base_color": "sRGB true",
+        "normal": "sRGB false; Compression: Normalmap",
+        "orm": "sRGB false; Compression: Masks (R=AO,G=Roughness,B=Metallic)",
+        "height": "sRGB false; Compression: Grayscale"
+      },
+      "parameters": {
+        "metallic": 0.9,
+        "roughness_art_direction": 0.42,
+        "emissive": false
+      }
+    },
+    {
+      "id": "Ash",
+      "label": "Volcanic Ash",
+      "master_material": "M_FC_Master_Surface",
+      "textures": {
+        "base_color": "T_FC_Ash_BC.png",
+        "normal": "T_FC_Ash_N.png",
+        "orm": "T_FC_Ash_ORM.png",
+        "height": "T_FC_Ash_H.png"
+      },
+      "ue_settings": {
+        "base_color": "sRGB true",
+        "normal": "sRGB false; Compression: Normalmap",
+        "orm": "sRGB false; Compression: Masks (R=AO,G=Roughness,B=Metallic)",
+        "height": "sRGB false; Compression: Grayscale"
+      },
+      "parameters": {
+        "metallic": 0.0,
+        "roughness_art_direction": 0.96,
+        "emissive": false
+      }
+    },
+    {
+      "id": "Magma",
+      "label": "Flowing Magma",
+      "master_material": "M_FC_Master_Emissive",
+      "textures": {
+        "base_color": "T_FC_Magma_BC.png",
+        "normal": "T_FC_Magma_N.png",
+        "orm": "T_FC_Magma_ORM.png",
+        "height": "T_FC_Magma_H.png",
+        "emissive": "T_FC_Magma_E.png"
+      },
+      "ue_settings": {
+        "base_color": "sRGB true",
+        "normal": "sRGB false; Compression: Normalmap",
+        "orm": "sRGB false; Compression: Masks (R=AO,G=Roughness,B=Metallic)",
+        "height": "sRGB false; Compression: Grayscale",
+        "emissive": "sRGB true; use as emissive color, expose EmissiveIntensity scalar"
+      },
+      "parameters": {
+        "metallic": 0.0,
+        "roughness_art_direction": 0.3,
+        "emissive": true
+      }
+    },
+    {
+      "id": "Ember",
+      "label": "Ember Core",
+      "master_material": "M_FC_Master_Emissive",
+      "textures": {
+        "base_color": "T_FC_Ember_BC.png",
+        "normal": "T_FC_Ember_N.png",
+        "orm": "T_FC_Ember_ORM.png",
+        "height": "T_FC_Ember_H.png",
+        "emissive": "T_FC_Ember_E.png"
+      },
+      "ue_settings": {
+        "base_color": "sRGB true",
+        "normal": "sRGB false; Compression: Normalmap",
+        "orm": "sRGB false; Compression: Masks (R=AO,G=Roughness,B=Metallic)",
+        "height": "sRGB false; Compression: Grayscale",
+        "emissive": "sRGB true; use as emissive color, expose EmissiveIntensity scalar"
+      },
+      "parameters": {
+        "metallic": 0.03,
+        "roughness_art_direction": 0.28,
+        "emissive": true
+      }
+    },
+    {
+      "id": "CinderGold",
+      "label": "Cinder Gold",
+      "master_material": "M_FC_Master_Emissive",
+      "textures": {
+        "base_color": "T_FC_CinderGold_BC.png",
+        "normal": "T_FC_CinderGold_N.png",
+        "orm": "T_FC_CinderGold_ORM.png",
+        "height": "T_FC_CinderGold_H.png",
+        "emissive": "T_FC_CinderGold_E.png"
+      },
+      "ue_settings": {
+        "base_color": "sRGB true",
+        "normal": "sRGB false; Compression: Normalmap",
+        "orm": "sRGB false; Compression: Masks (R=AO,G=Roughness,B=Metallic)",
+        "height": "sRGB false; Compression: Grayscale",
+        "emissive": "sRGB true; use as emissive color, expose EmissiveIntensity scalar"
+      },
+      "parameters": {
+        "metallic": 0.82,
+        "roughness_art_direction": 0.31,
+        "emissive": true
+      }
+    },
+    {
+      "id": "SafeCyan",
+      "label": "Aether Safe Cyan",
+      "master_material": "M_FC_Master_Emissive",
+      "textures": {
+        "base_color": "T_FC_SafeCyan_BC.png",
+        "normal": "T_FC_SafeCyan_N.png",
+        "orm": "T_FC_SafeCyan_ORM.png",
+        "height": "T_FC_SafeCyan_H.png",
+        "emissive": "T_FC_SafeCyan_E.png"
+      },
+      "ue_settings": {
+        "base_color": "sRGB true",
+        "normal": "sRGB false; Compression: Normalmap",
+        "orm": "sRGB false; Compression: Masks (R=AO,G=Roughness,B=Metallic)",
+        "height": "sRGB false; Compression: Grayscale",
+        "emissive": "sRGB true; use as emissive color, expose EmissiveIntensity scalar"
+      },
+      "parameters": {
+        "metallic": 0.3,
+        "roughness_art_direction": 0.24,
+        "emissive": true
+      }
+    },
+    {
+      "id": "EliteViolet",
+      "label": "Elite Violet",
+      "master_material": "M_FC_Master_Emissive",
+      "textures": {
+        "base_color": "T_FC_EliteViolet_BC.png",
+        "normal": "T_FC_EliteViolet_N.png",
+        "orm": "T_FC_EliteViolet_ORM.png",
+        "height": "T_FC_EliteViolet_H.png",
+        "emissive": "T_FC_EliteViolet_E.png"
+      },
+      "ue_settings": {
+        "base_color": "sRGB true",
+        "normal": "sRGB false; Compression: Normalmap",
+        "orm": "sRGB false; Compression: Masks (R=AO,G=Roughness,B=Metallic)",
+        "height": "sRGB false; Compression: Grayscale",
+        "emissive": "sRGB true; use as emissive color, expose EmissiveIntensity scalar"
+      },
+      "parameters": {
+        "metallic": 0.25,
+        "roughness_art_direction": 0.36,
+        "emissive": true
+      }
+    },
+    {
+      "id": "BoneAsh",
+      "label": "Ashen Bone Stone",
+      "master_material": "M_FC_Master_Surface",
+      "textures": {
+        "base_color": "T_FC_BoneAsh_BC.png",
+        "normal": "T_FC_BoneAsh_N.png",
+        "orm": "T_FC_BoneAsh_ORM.png",
+        "height": "T_FC_BoneAsh_H.png"
+      },
+      "ue_settings": {
+        "base_color": "sRGB true",
+        "normal": "sRGB false; Compression: Normalmap",
+        "orm": "sRGB false; Compression: Masks (R=AO,G=Roughness,B=Metallic)",
+        "height": "sRGB false; Compression: Grayscale"
+      },
+      "parameters": {
+        "metallic": 0.0,
+        "roughness_art_direction": 0.76,
+        "emissive": false
+      }
+    },
+    {
+      "id": "CharredCloth",
+      "label": "Charred Cloth",
+      "master_material": "M_FC_Master_Surface",
+      "textures": {
+        "base_color": "T_FC_CharredCloth_BC.png",
+        "normal": "T_FC_CharredCloth_N.png",
+        "orm": "T_FC_CharredCloth_ORM.png",
+        "height": "T_FC_CharredCloth_H.png"
+      },
+      "ue_settings": {
+        "base_color": "sRGB true",
+        "normal": "sRGB false; Compression: Normalmap",
+        "orm": "sRGB false; Compression: Masks (R=AO,G=Roughness,B=Metallic)",
+        "height": "sRGB false; Compression: Grayscale"
+      },
+      "parameters": {
+        "metallic": 0.0,
+        "roughness_art_direction": 0.9,
+        "emissive": false
+      }
+    }
+  ]
+}

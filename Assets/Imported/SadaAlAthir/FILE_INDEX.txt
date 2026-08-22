@@ -1,0 +1,14 @@
+./.gitignore
+./BUILD_STATUS.txt
+./FILE_INDEX.txt
+./README.md
+./SadaAlAthir.uproject
+./architecture/project-structure.md
+./architecture/technical-architecture.md
+./config/project-bootstrap-spec.md
+./content_manifest/asset-register.md
+./docs/00-project-brief.md
+./docs/game-design-document.md
+./docs/readiness-checklist.md
+./planning/decision-log.md
+./planning/production-roadmap.md

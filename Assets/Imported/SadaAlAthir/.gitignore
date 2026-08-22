@@ -1,0 +1,26 @@
+# Unreal Engine generated directories
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# IDE and local settings
+.vscode/
+.idea/
+*.suo
+*.user
+*.userprefs
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local reports and exports
+reports/local/
+exports/local/
+
+# Secrets and machine-specific configuration
+.env
+.env.*
+!.env.example

@@ -1,0 +1,11 @@
+{
+  "FileVersion": 3,
+  "EngineAssociation": "5.8",
+  "Category": "Games",
+  "Description": "Sada Al Athir - documentation-first project bootstrap",
+  "Modules": [],
+  "Plugins": [],
+  "TargetPlatforms": [
+    "Windows"
+  ]
+}

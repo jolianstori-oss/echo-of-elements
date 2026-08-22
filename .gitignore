@@ -68,3 +68,7 @@ Desktop.ini
 !Config/*.xml
 !Source/
 !Content/
+
+# Keep all user-supplied source-pack metadata under the project asset library.
+!Assets/FireCastle/SourcePackage/Documentation/*.json
+!Assets/FireCastle/SourcePackage/Materials/*.json

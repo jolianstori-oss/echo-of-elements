@@ -1,33 +1,33 @@
 ---
 name: Feature request
-about: اقترح ميزة أو تحسيناً يرفع جودة تجربة اللعب أو التطوير
-title: "[Feature] "
-labels: [enhancement]
+about: Propose a player-facing feature, mechanic, system, or experience improvement
+ title: "[Feature]: "
+labels: [feature, needs-triage]
 assignees: []
 ---
 
-## المشكلة أو الحاجة
+## Player value
 
-ما المشكلة التي تحاول هذه الميزة حلها؟
+<!-- Who benefits from this feature, and what problem or opportunity does it address? -->
 
-## الاقتراح
+## Proposal
 
-اشرح الحل المقترح وسلوك الميزة من منظور اللاعب أو المطوّر.
+<!-- Describe the intended experience and the main interactions. -->
 
-## القيمة المتوقعة
-
-كيف ستدعم الميزة الرؤية أو تجربة اللعب أو قابلية الصيانة؟
-
-## نطاق العمل والبدائل
-
-اذكر البدائل التي جُرّبت أو الحلول الأخرى الممكنة، وحدد ما هو خارج النطاق.
-
-## معايير القبول
+## Acceptance criteria
 
 - [ ]
 - [ ]
 - [ ]
 
-## ملاحظات إضافية
+## Design and technical considerations
 
-أضف نماذج أولية أو مراجع أو سياقاً آخر ذا صلة.
+<!-- Identify dependencies, risks, accessibility needs, performance concerns, content requirements, or save/network implications. -->
+
+## Alternatives considered
+
+<!-- Describe other approaches and why this proposal is preferred. -->
+
+## Supporting material
+
+<!-- Add references, mockups, recordings, diagrams, or related issues. -->

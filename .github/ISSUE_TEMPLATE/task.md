@@ -1,35 +1,33 @@
 ---
 name: Task
-about: تتبّع مهمة تنفيذية أو بحثية محددة
-title: "[Task] "
+about: Track a bounded engineering, content, documentation, QA, or production task
+ title: "[Task]: "
 labels: [task]
 assignees: []
 ---
 
-## الهدف
+## Objective
 
-ما النتيجة التي يجب تحقيقها؟
+<!-- State the concrete outcome this task should produce. -->
 
-## السياق
+## Scope
 
-اذكر المستندات أو الأنظمة أو القرارات المرتبطة بهذه المهمة.
+<!-- Explain what is included and what is intentionally out of scope. -->
 
-## نطاق العمل
-
-اشرح ما يتضمنه العمل وما لا يتضمنه.
-
-## خطوات التنفيذ المقترحة
+## Deliverables
 
 - [ ]
 - [ ]
 - [ ]
 
-## معايير الإنجاز
+## Dependencies and risks
 
-- [ ] التغيير موثق أو مشروح عند الحاجة.
-- [ ] الاختبارات أو فحوصات التحقق المطلوبة ناجحة.
-- [ ] لا توجد ملفات ثنائية أو أصول غير مرخصة مضافة دون توضيح.
+<!-- List prerequisite work, affected systems, content dependencies, or known risks. -->
 
-## الاعتماديات والمخاطر
+## Validation
 
-اذكر أي اعتماديات أو مخاطر أو قرارات تحتاج إلى متابعة.
+<!-- Explain how completion will be checked, including editor, runtime, automation, or review steps. -->
+
+## Notes
+
+<!-- Add links to related issues, design notes, assets, or decisions. -->

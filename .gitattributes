@@ -1,0 +1,6 @@
+# Preserve intentional Markdown hard breaks in user-supplied documentation.
+Assets/FireCastle/SourcePackage/*.md -whitespace
+Assets/FireCastle/SourcePackage/**/*.md -whitespace
+Assets/Imported/SadaAlAthir/**/*.md -whitespace
+docs/stages/fire-castle/*.md -whitespace
+docs/foundations/sada-al-athir/*.md -whitespace

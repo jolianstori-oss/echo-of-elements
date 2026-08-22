@@ -1,0 +1,84 @@
+name: Unreal Engine Windows Build
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - develop
+  workflow_dispatch:
+
+# This workflow is intentionally a skeleton. Configure a Windows runner with
+# Unreal Engine and Visual Studio, then set the project-specific variables below.
+permissions:
+  contents: read
+
+concurrency:
+  group: ue-windows-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  PROJECT_NAME: EchoOfElements
+  PROJECT_FILE: EchoOfElements.uproject
+  UE_ROOT: C:\\Program Files\\Epic Games\\UE_5.x
+  BUILD_CONFIGURATION: Development
+  BUILD_PLATFORM: Win64
+
+jobs:
+  build:
+    name: Build Unreal Engine project on Windows
+    runs-on: windows-2022
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Verify required tools and paths
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          if (-not (Test-Path $env:PROJECT_FILE)) {
+            throw "Project file not found: $env:PROJECT_FILE"
+          }
+          if (-not (Test-Path $env:UE_ROOT)) {
+            throw "Unreal Engine root not found: $env:UE_ROOT"
+          }
+          $buildScript = Join-Path $env:UE_ROOT 'Build/BatchFiles/RunUAT.bat'
+          if (-not (Test-Path $buildScript)) {
+            throw "RunUAT.bat not found under: $env:UE_ROOT"
+          }
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+
+      # Replace this step with the project's approved caching strategy when the
+      # runner and engine installation are stable enough for shared caches.
+      - name: Build, cook, stage, and package
+        shell: cmd
+        run: >-
+          "%UE_ROOT%\Build\BatchFiles\RunUAT.bat"
+          BuildCookRun
+          -project="%GITHUB_WORKSPACE%\%PROJECT_FILE%"
+          -noP4
+          -utf8output
+          -build
+          -cook
+          -stage
+          -pak
+          -archive
+          -archivedirectory="%GITHUB_WORKSPACE%\Build\%BUILD_PLATFORM%"
+          -platform=%BUILD_PLATFORM%
+          -clientconfig=%BUILD_CONFIGURATION%
+          -unattended
+          -prereqs
+
+      - name: Upload packaged build
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: EchoOfElements-${{ github.sha }}-Win64
+          path: Build/Win64/**
+          if-no-files-found: error
+          retention-days: 14

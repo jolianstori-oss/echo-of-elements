@@ -1,40 +1,40 @@
 ---
 name: Bug report
-about: أبلغ عن مشكلة قابلة لإعادة الإنتاج في اللعبة أو أدوات التطوير
-title: "[Bug] "
-labels: [bug]
+about: Report a reproducible defect in the game, editor, tools, or build
+ title: "[Bug]: "
+labels: [bug, needs-triage]
 assignees: []
 ---
 
-## الوصف
+## Summary
 
-صف المشكلة بوضوح وباختصار.
+<!-- Describe the defect in one or two sentences. -->
 
-## خطوات إعادة الإنتاج
+## Environment
 
-1. اذهب إلى ...
-2. نفّذ ...
-3. لاحظ ...
+- Unreal Engine version:
+- Platform and OS version:
+- Build or commit:
+- Affected map, mode, or system:
 
-## السلوك المتوقع
+## Steps to reproduce
 
-ما الذي كان ينبغي أن يحدث؟
+1.
+2.
+3.
 
-## السلوك الفعلي
+## Expected behavior
 
-ما الذي حدث فعلياً؟
+<!-- What should have happened? -->
 
-## بيئة التشغيل
+## Actual behavior
 
-- إصدار Unreal Engine: 5.8
-- النظام والمنصة:
-- نسخة المشروع أو commit:
-- إعداد البناء: DebugGame / Development / Shipping
+<!-- What happened instead? Include exact error text where possible. -->
 
-## السجلات ولقطات الشاشة
+## Evidence
 
-أرفق السجلات أو لقطات الشاشة ذات الصلة، واحذف أي معلومات حساسة قبل الإرفاق.
+<!-- Add logs, call stacks, screenshots, videos, or a minimal reproduction. Remove secrets and personal data. -->
 
-## ملاحظات إضافية
+## Additional context
 
-أضف أي سياق أو حلول مؤقتة مفيدة.
+<!-- Note frequency, workarounds, regression information, or related issues. -->

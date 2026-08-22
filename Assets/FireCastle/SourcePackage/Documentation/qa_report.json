@@ -1,0 +1,395 @@
+{
+  "package": "Echo of Elements — Fire Castle Prototype 3D Pack",
+  "asset_count_expected": 32,
+  "asset_count_checked": 32,
+  "static_meshes": 26,
+  "skeletal_meshes": 6,
+  "passed": 32,
+  "failed_assets": [],
+  "checks": [
+    {
+      "asset": "SM_FC_FloorTile_400",
+      "type": "Static Mesh",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    },
+    {
+      "asset": "SM_FC_Wall_400x400",
+      "type": "Static Mesh",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    },
+    {
+      "asset": "SM_FC_Archway_400",
+      "type": "Static Mesh",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    },
+    {
+      "asset": "SM_FC_Battlement_400",
+      "type": "Static Mesh",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    },
+    {
+      "asset": "SM_FC_Pillar_360",
+      "type": "Static Mesh",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    },
+    {
+      "asset": "SM_FC_BrokenBridge_800",
+      "type": "Static Mesh",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    },
+    {
+      "asset": "SM_FC_HotPlatform_400",
+      "type": "Static Mesh",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    },
+    {
+      "asset": "SM_FC_MagmaFissure_400",
+      "type": "Static Mesh",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    },
+    {
+      "asset": "SM_FC_Brazier",
+      "type": "Static Mesh",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    },
+    {
+      "asset": "SM_FC_AbsorbShrine",
+      "type": "Static Mesh",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    },
+    {
+      "asset": "SM_FC_CheckpointObelisk",
+      "type": "Static Mesh",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    },
+    {
+      "asset": "SM_FC_FireGate",
+      "type": "Static Mesh",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    },
+    {
+      "asset": "SM_FC_ElementalExitGate",
+      "type": "Static Mesh",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    },
+    {
+      "asset": "SM_FC_CinderKey",
+      "type": "Static Mesh",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    },
+    {
+      "asset": "SM_FC_EmberSigil",
+      "type": "Static Mesh",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    },
+    {
+      "asset": "SM_FC_LorePedestal",
+      "type": "Static Mesh",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    },
+    {
+      "asset": "SM_FC_RewardChest",
+      "type": "Static Mesh",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    },
+    {
+      "asset": "SM_FC_RubbleCluster",
+      "type": "Static Mesh",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    },
+    {
+      "asset": "SM_FC_HangingChain",
+      "type": "Static Mesh",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    },
+    {
+      "asset": "SM_FC_Stair_6Step",
+      "type": "Static Mesh",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    },
+    {
+      "asset": "SM_FC_Ceiling_400",
+      "type": "Static Mesh",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    },
+    {
+      "asset": "SM_FC_FlameJet",
+      "type": "Static Mesh",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    },
+    {
+      "asset": "SM_FC_HeatBarrier",
+      "type": "Static Mesh",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    },
+    {
+      "asset": "SM_FC_EmberProjectile",
+      "type": "Static Mesh",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    },
+    {
+      "asset": "SM_FC_AbsorbTelegraph",
+      "type": "Static Mesh",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    },
+    {
+      "asset": "SM_FC_EmberBanner",
+      "type": "Static Mesh",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    },
+    {
+      "asset": "SK_Aren_Prototype",
+      "type": "Skeletal Mesh (prototype)",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    },
+    {
+      "asset": "SK_Emberling",
+      "type": "Skeletal Mesh (prototype)",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    },
+    {
+      "asset": "SK_CinderCaster",
+      "type": "Skeletal Mesh (prototype)",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    },
+    {
+      "asset": "SK_AshGuard",
+      "type": "Skeletal Mesh (prototype)",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    },
+    {
+      "asset": "SK_EmberWarden",
+      "type": "Skeletal Mesh (prototype)",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    },
+    {
+      "asset": "SK_Ignar",
+      "type": "Skeletal Mesh (prototype)",
+      "checks": {
+        "fbx_exists_nonzero": true,
+        "blend_exists_nonzero": true,
+        "glb_exists_nonzero": true,
+        "glb_header_valid": true,
+        "fbx_binary_signature": true
+      },
+      "passed": true
+    }
+  ]
+}
