@@ -1,4 +1,5 @@
 #include "Abilities/ElementReactionSubsystem.h"
+#include "Elements/ElementReactionData.h"
 
 void UElementReactionSubsystem::Deinitialize()
 {

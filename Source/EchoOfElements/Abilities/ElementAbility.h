@@ -3,7 +3,7 @@
 #include "CoreMinimal.h"
 #include "Abilities/GameplayAbility.h"
 #include "GameplayTagContainer.h"
-#include "ElementDataAsset.h"
+#include "Elements/ElementDataAsset.h"
 #include "ElementAbility.generated.h"
 
 UCLASS(Abstract)

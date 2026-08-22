@@ -3,7 +3,7 @@
 #include "CoreMinimal.h"
 #include "Subsystems/WorldSubsystem.h"
 #include "GameplayTagContainer.h"
-#include "ElementDataAsset.h"
+#include "Elements/ElementReactionData.h"
 #include "ElementReactionSubsystem.generated.h"
 
 USTRUCT(BlueprintType)
